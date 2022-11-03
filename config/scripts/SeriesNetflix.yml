@@ -1,0 +1,30 @@
+                                      ######################################################
+                                      #                TV Collections Studios              #
+                                      ######################################################
+###########################
+#        Templates        #
+###########################
+templates:
+    Studio:
+        url_poster: <<poster>>
+        sort_title: ++<<order>>_<<collection_name>>
+        #collection_order: alpha
+        
+collections:
+###########################
+#    Studio Collections   #
+###########################
+
+  Netflix:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/220354, order: .1}
+    summary: Series transmitidas por Netflix
+    smart_filter:
+      any:
+        Network: 
+          - Netflix
+
+  Tendencias Netflix:
+      template: {name: Studio, poster: https://theposterdb.com/api/assets/220354, order: .1}
+      trakt_list: https://trakt.tv/users/shrop21/lists/netflix-trending-shows
+
+

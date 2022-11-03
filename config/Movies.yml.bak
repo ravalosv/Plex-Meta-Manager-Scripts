@@ -1,0 +1,34 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+collections:
+  Lo mejor de los 80's:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1980
+      primary_release_date.lte: 12/31/1989
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: Una colección con lo mejor de los años 80's
+  Lo mejor de los 90's:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1990
+      primary_release_date.lte: 12/31/1999
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: Una colección con lo mejor de los años 90's    
+  Lo mejor del 2020:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2020
+      primary_release_date.lte: 12/31/2020
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: Una colección con lo mejor del año 2020

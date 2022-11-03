@@ -1,0 +1,80 @@
+#####################################################
+#                Genre Collections                  #
+#####################################################
+templates:
+  GenreMulti:
+    template: { name: GenreMulti }
+    sort_title: +01_<<orden>>_<<collection_name>>
+    sync_mode: sync
+
+collections:
+  Estrenos 2022:
+    template: { name: GenreMulti, orden: '01'  }
+    summary: Los estrenos del 2022
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/2022.jpg
+    smart_filter:
+      all:
+        year: 
+          - 2022
+
+  2021 Collection:
+    template: { name: GenreMulti, orden: '05' }
+    summary: Las mejores peliculas del año 2021
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/2021.jpg
+    smart_filter:
+      all:
+        year: 
+          - 2021
+
+  2020 Collection:
+    template: { name: GenreMulti, orden: '10' }
+    summary: Las mejores peliculas del año 2020
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/2020.jpg
+    smart_filter:
+      all:
+        year: 
+          - 2020
+
+  2010's Collection:
+    template: { name: GenreMulti, orden: '15' }
+    summary: Las mejores peliculas de la década del 2010
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/2010.jpg
+    smart_filter:
+      any:
+        decade: 
+          - 2000
+
+  2000's Collection:
+    template: { name: GenreMulti, orden: '20' }
+    summary: Las mejores peliculas de la primera década del siglo 
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/2000.jpg
+    smart_filter:
+      any:
+        decade: 
+          - 2000
+
+  80's y 90's Collection:
+    template: { name: GenreMulti, orden: '25' }
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    summary: Todas las películas nostálgicas de los años 80 y 90 en una colección
+    smart_filter:
+      any:
+        decade: 
+          - 1980
+          - 1990
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

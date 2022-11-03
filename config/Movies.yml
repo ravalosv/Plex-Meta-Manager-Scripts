@@ -1,0 +1,17 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: 00_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+collections:
+  2022 Collection:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2022
+      primary_release_date.lte: 12/31/2022
+      with_original_language: en
+      sort_by: popularity.desc
+    summary: Todos los estrenos de este año    

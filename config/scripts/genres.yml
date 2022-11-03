@@ -1,0 +1,190 @@
+templates:
+  GenreMulti:
+    template: { name: GenreMulti }
+    sort_title: +02_<<orden>>_<<collection_name>>
+    sync_mode: sync
+    
+collections:
+  Películas de Acción:
+    template: { name: GenreMulti, orden: '01' }
+    url_poster: https://i.imgur.com/5rP3mqc.jpg
+    summary: El cine de acción es un género en el que la acción física tiene prioridad en la narración. La película a menudo tendrá movimiento continuo y acción incluyendo acrobacias físicas, persecuciones, peleas, batallas y carreras. La historia generalmente gira en torno a un héroe que tiene un objetivo, pero se enfrenta a probabilidades increíbles para obtenerlo.
+    smart_filter:
+      all:
+        genre: 
+          - Action
+
+  Películas de Aventura:
+    template: { name: GenreMulti, orden: '02' }
+    url_poster: https://i.imgur.com/fZMIfdy.jpg
+    summary: El cine de aventura es un género que gira en torno a las conquistas y exploraciones de un protagonista. El propósito de la conquista puede ser recuperar una persona o un tesoro, pero a menudo el enfoque principal es simplemente la búsqueda de lo desconocido. Estas películas generalmente tienen lugar en lugares exóticos y juegan con mitos históricos. Las películas de aventura incorporan rompecabezas de suspense y obstáculos intrincados que el protagonista debe superar para lograr el objetivo final.
+    smart_filter:
+      all:
+        genre: 
+          - Adventure
+
+  Películas de Animación:
+    template: { name: GenreMulti, orden: '03' }
+    url_poster: https://i.imgur.com/W9355wl.jpg
+    summary: La película animada es una colección de ilustraciones que se fotografían cuadro por cuadro y luego se reproducen en una rápida sucesión. Desde sus inicios, la animación ha tenido una tendencia creativa e imaginativa. Siendo capaz de traer animales y objetos a la vida, este género ha atendido a los cuentos de hadas y cuentos infantiles. Sin embargo, la animación ha sido durante mucho tiempo un género disfrutado por todas las edades. A partir de los últimos años, ha habido incluso una afluencia de animación dirigida a los adultos. La animación es comúnmente considerada como una técnica, por lo que es la capacidad de abarcar muchos géneros diferentes.
+    smart_filter:
+      all:
+        genre: 
+          - Animación
+
+  Películas de Artes Marciales:
+    template: { name: GenreMulti, orden: '04' }
+    summary: La película de artes marciales es un sub-género de películas de acción que cuentan con numerosas artes marciales de combate entre los personajes. Estos combates suelen ser el principal atractivo y valor de entretenimiento de las películas, y a menudo son un método de narración y expresión y desarrollo de personajes. Las artes marciales se presentan con frecuencia en escenas de entrenamiento y otras secuencias, además de peleas. Las películas de artes marciales comúnmente incluyen otros tipos de acción, como combate cuerpo a cuerpo, acrobacias, persecuciones y tiroteos.
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Martial%20Arts.jpg
+    smart_filter:
+      all:
+        genre: 
+          - Martial Arts
+
+  Películas de Comedia:
+    template: { name: GenreMulti, orden: '05' }
+    url_poster: https://i.imgur.com/dIMKbt9.jpg
+    summary: La comedia es un género de cine que utiliza el humor como una fuerza impulsora. El objetivo de una película de comedia es la risa ilícita de la audiencia a través de historias y personajes entretenidos. Aunque la película de comedia puede tomar algún material serio, la mayoría tiene un final feliz. La comedia tiene la tendencia a convertirse en un sub-género híbrido porque el humor se puede incorporar a muchos otros géneros. Las comedias son más propensas que otras películas a recurrir al éxito y la popularidad de una estrella individual.
+    smart_filter:
+      all:
+        genre: 
+          - Comedia
+
+  Películas Infantiles:
+    template: { name: GenreMulti, orden: '05' }
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Children.jpg
+    smart_filter:
+      all:
+        genre: 
+          - Children
+
+  Películas Familiares:
+    template: { name: GenreMulti, orden: '05' }
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Family.jpg
+    smart_filter:
+      all:
+        genre: 
+          - Familia
+
+  Películas Documentales:
+    template: { name: GenreMulti, orden: '06' }
+    url_poster: https://i.imgur.com/KRH25hE.jpg
+    summary: El cine documental es un género de no ficción destinado a documentar la realidad principalmente con fines de instrucción, educación o mantenimiento de un registro histórico.
+    smart_filter:
+      all:
+        genre: 
+          - Documental
+
+  Películas de Drama:
+    template: { name: GenreMulti, orden: '07' }
+    url_poster: https://i.imgur.com/RwOUFLI.jpg
+    summary: El cine de Drama es un género que se basa en el desarrollo emocional y relacional de personajes realistas. Mientras que la película dramática depende en gran medida de este tipo de desarrollo, los temas dramáticos juegan un papel importante en la trama también. A menudo, estos temas dramáticos se toman de temas intensos de la vida real. Si héroes o heroínas se enfrentan a un conflicto desde el exterior o un conflicto dentro de sí mismos, la película de drama tiene como objetivo contar una historia honesta de las luchas humanas.
+    smart_filter:
+      all:
+        genre: 
+          - Drama
+
+  Películas de Fantasía:
+    template: { name: GenreMulti, orden: '08' }
+    url_poster: https://i.imgur.com/IdeoNnr.jpg
+    summary: El cine de fantasía es un género que incorpora temas imaginativos y fantásticos. Estos temas generalmente involucran magia, eventos sobrenaturales o mundos de fantasía. Aunque es su propio género, estas películas pueden coincidir con los géneros de terror y ciencia ficción. A diferencia de la ciencia ficción, una película de fantasía no necesita estar arraigada en los hechos. Este elemento permite al público ser transportado a un mundo nuevo y único. A menudo, estas películas se centran en un héroe ordinario en una situación extraordinaria.
+    smart_filter:
+      all:
+        genre: 
+          - Fantasía
+
+  Películas de Gángsters:
+    template: { name: GenreMulti, orden: '09' }
+    summary: La película de gángsters es un sub-género de películas de crimen que se centra en el crimen organizado o la mafia. A menudo la trama gira en torno al ascenso y caída de un líder del crimen organizado. Muchas películas de Gangster exploran la naturaleza destructiva del crimen organizado, mientras que otras intentan mostrar la humanidad de los personajes individuales.
+    trakt_list: 
+      - https://trakt.tv/users/bmonomad/lists/gangster
+      - https://trakt.tv/users/moses456/lists/hood_gangsters_ghetto-movies
+      - https://trakt.tv/users/whitecoat21/lists/cartel-gang-mafia
+      - https://trakt.tv/users/debonair-pirate/lists/mobsters
+      - https://trakt.tv/users/krissykk/lists/documentary-movies-famous-gangsters-organized-crime
+      - https://trakt.tv/users/majeed_pk/lists/best-mafia-gangsters-tv-shows
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gangster.jpg
+
+  Películas Históricas:
+    template: { name: GenreMulti, orden: '10' }
+    url_poster: https://i.imgur.com/1n070o0.jpg
+    summary: El cine de historia es un género que toma los acontecimientos históricos y las personas y los interpreta a mayor escala. La precisión histórica no es el foco principal, sino más bien la narración de una historia grandiosa. El drama de una película de Historia a menudo se acentúa por una partitura musical arrolladora, trajes lujosos y un alto valor de producción.
+    smart_filter:
+      all:
+        genre: 
+          - Historia
+          - Biography
+
+  Musicales:
+    template: { name: GenreMulti, orden: '11' }
+    url_poster: https://i.imgur.com/1n070o0.jpg
+    summary: El cine de historia es un género que toma los acontecimientos históricos y las personas y los interpreta a mayor escala. La precisión histórica no es el foco principal, sino más bien la narración de una historia grandiosa. El drama de una película de Historia a menudo se acentúa por una partitura musical arrolladora, trajes lujosos y un alto valor de producción.
+    smart_filter:
+      all:
+        genre: 
+          - Música          
+          - Musical
+
+  Películas de Ciencia Ficción:
+    template: { name: GenreMulti, orden: '12' }
+    url_poster: https://i.imgur.com/EPi451Z.jpg
+    summary: La película de ciencia ficción (Sci-Fi) es un género que incorpora temas hipotéticos y basados en la ciencia en la trama de la película. A menudo, este género incorpora elementos y tecnologías futuristas para explorar cuestiones sociales, políticas y filosóficas. La película en sí se desarrolla generalmente en el futuro, ya sea en la tierra o en el espacio. Tradicionalmente, una película de ciencia ficción incorporará héroes, villanos, lugares inexplorados, misiones fantásticas y tecnología avanzada.
+    smart_filter:
+      all:
+        genre: 
+          - Ciencia ficción
+          - Fantasía
+
+  Películas de Deportes:
+    template: { name: GenreMulti, orden: '13' }
+    url_poster: https://i.imgur.com/uGtTbYV.jpg
+    summary: Una película deportiva gira en torno a un entorno deportivo, un evento o un atleta. A menudo, estas películas se centrarán en un único evento deportivo que tiene una importancia significativa. Las películas deportivas tradicionalmente tienen una trama simple que se acumula hasta el evento deportivo significativo. Este género es conocido por incorporar técnicas cinematográficas para construir anticipación e intensidad. Las películas deportivas tienen una amplia gama de sub-géneros, desde comedias hasta dramas, y son más propensas que otros géneros a estar basadas en eventos de la vida real.
+    smart_filter:
+      all:
+        genre: 
+          - Sport
+
+  Películas de Guerra:
+    template: { name: GenreMulti, orden: '13' }
+    url_poster: https://i.imgur.com/tPgvWij.jpg
+    summary: War Film es un género que analiza la realidad de la guerra a gran escala. A menudo se centran en batallas históricas, así como en cuestiones políticas dentro de la guerra. Este género por lo general se centra en un personaje principal y su equipo de apoyo, dando a la audiencia una mirada al interior de la cruda realidad de la guerra.
+    smart_filter:
+      all:
+        genre: 
+          - Bélica
+
+  Películas Western:
+    template: { name: GenreMulti, orden: '13' }
+    url_poster: https://i.imgur.com/NbiRkV6.jpg
+    summary: "Western Film es un género que gira en torno a historias ambientadas principalmente a finales del siglo XIX en el Viejo Oeste estadounidense. La mayoría de los westerns se sitúan entre la Guerra Civil Americana (1865) y los primeros años 1900. Los temas comunes en Western Film incluyen: la conquista del salvaje oeste, la separación cultural de Oriente y Occidente, la resistencia de Occidente al cambio moderno, el conflicto entre vaqueros e indios, forajidos y la caza de tesoros/ oro. American Western Film generalmente gira en torno a un héroe estoico y enfatiza la importancia del honor y el sacrificio."
+    smart_filter:
+      all:
+        genre: 
+          - Western
+
+  Películas de Terror:
+    template: { name: GenreMulti, orden: '13' }
+    url_poster: https://i.imgur.com/NbiRkV6.jpg
+    summary: "Western Film es un género que gira en torno a historias ambientadas principalmente a finales del siglo XIX en el Viejo Oeste estadounidense. La mayoría de los westerns se sitúan entre la Guerra Civil Americana (1865) y los primeros años 1900. Los temas comunes en Western Film incluyen: la conquista del salvaje oeste, la separación cultural de Oriente y Occidente, la resistencia de Occidente al cambio moderno, el conflicto entre vaqueros e indios, forajidos y la caza de tesoros/ oro. American Western Film generalmente gira en torno a un héroe estoico y enfatiza la importancia del honor y el sacrificio."
+    smart_filter:
+      all:
+        genre: 
+          - Terror
+          - Suspense
+
+  Películas de Suspenso:
+    template: { name: GenreMulti, orden: '13' }
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Suspense.jpg
+    smart_filter:
+      all:
+        genre: 
+          - Suspense
+          - Misterio
+
+  Películas Apocalípticas:
+    template: { name: GenreMulti, orden: '13' }
+    trakt_list: 
+      - https://trakt.tv/users/ld667/lists/the-most-epic-zombie-films-since-2000
+      - https://trakt.tv/users/mraniki/lists/zombie
+      - https://trakt.tv/users/turkkildare/lists/best-worldwide-apocalypse-pandemic-zombie-movies
+

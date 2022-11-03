@@ -1,0 +1,12 @@
+Instrucciones para ejecutar el script
+
+1.- ingresar a cmd en la ruta C:\Plex-Meta-Manager
+
+2.- activar ambiente virtual
+
+.\pmm-venv\Scripts\activate
+
+3.- ejecutar 
+
+python plex_meta_manager.py -r
+

@@ -1,0 +1,46 @@
+######################################################
+#                Studio Collections                  #
+######################################################
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    smart_label: release.desc
+collections:
+  Aardman:
+    template: { name: Studio, company: 297 }
+    summary: Aardman Animations, Ltd. es un estudio de animación británico con sede en Bristol, Inglaterra. Aardman es conocido por las películas realizadas con técnicas de animación de arcilla de stop-motion, particularmente aquellas con personajes de plastilina como Wallace y Gromit.
+  Blue Sky:
+    template: { name: Studio, company: 9383 }
+    summary: Blue Sky Studios, Inc. es un estudio de cine de animación por ordenador estadounidense con sede en Greenwich, Connecticut. Es una filial de 20th Century Animation, una división de Disney Studios Content.
+  DreamWorks:
+    template: { name: Studio, company: 521 }
+    filters:
+      collection.not: Aardman
+    summary: DreamWorks Animation LLC (también conocido simplemente como DreamWorks) es un estudio de animación estadounidense y una filial de Universal Pictures, una subsidiaria de NBCUniversal de Comcast. Tiene su sede en Glendale, California, y produce largometrajes de animación, programas de televisión y juegos virtuales en línea.
+  Illumination Entertainment:
+    template: { name: Studio, company: 6704 }
+    summary: Illumination es un estudio de cine y animación estadounidense fundado por Chris Meledandri en 2007 y propiedad de Universal Pictures, una división de NBCUniversal, que es en sí misma una división de Comcast. Meledandri produce las películas, mientras que Universal financia y distribuye todas las películas. El estudio es responsable de las franquicias Despicable Me y The Secret Life of Pets y las adaptaciones cinematográficas de los libros de Dr. Seuss The Lorax y How the Grinch Stole Christmas. Los Minions, personajes de la serie Despicable Me, son las mascotas del estudio.
+  Pixar:
+    template: { name: Studio, company: 3 }
+    summary: Pixar Animation Studios, comúnmente conocido como Pixar, es un estudio de animación por computadora estadounidense con sede en Emeryville, California, una subsidiaria de Disney Studios Content propiedad de The Walt Disney Company. Pixar comenzó en 1979 como parte de la división informática de Lucasfilm, conocida como Graphics Group, antes de su spin-off como corporación el 3 de febrero de 1986, con financiación del cofundador de Apple Steve Jobs, quien se convirtió en su accionista mayoritario. Disney compró Pixar en 2006 con una valoración de 7.400 millones de dólares al convertir cada acción de Pixar en 2.3 acciones de Disney, una transacción que resultó en que Jobs se convirtiera en el mayor accionista individual de Disney en ese momento. Pixar es mejor conocido por sus largometrajes tecnológicamente impulsados por RenderMan, la propia implementación de la empresa de la interfaz de programación de aplicaciones de renderizado de imágenes RenderMan estándar de la industria. Luxo Jr., una lámpara de escritorio del cortometraje de 1986 del mismo nombre, es la mascota del estudio.
+  Studio Ghibli:
+    template: { name: Studio, company: 10342 }
+    summary: Studio Ghibli Inc. es un estudio de cine de animación japonés con sede en Koganei, Tokio. El estudio es mejor conocido por sus largometrajes de animación, y también ha producido varios cortometrajes, comerciales de televisión y una película de televisión. La mascota del estudio y símbolo más reconocible es el personaje, Totoro, un espíritu de gato gigante del clásico de 1988, My Neighbor Totoro.
+  Sony Pictures Animation:
+    template: { name: Studio, company: 2251 }
+    summary: Sony Pictures Animation Inc. es un estudio de animación estadounidense propiedad de Sony Entertainment Sony Pictures Entertainment a través de su división Motion Picture Group y fundada el 9 de mayo de 2002. Las películas del estudio son distribuidas en todo el mundo por Sony Pictures Releasing bajo su sello Columbia Pictures, mientras que todos los lanzamientos directos a vídeo son lanzados por Sony Pictures Home Entertainment.
+  Warner Animation Group:
+    template: { name: Studio, company: 25120 }
+    summary: Warner Animation Group (WAG) es un estudio de animación estadounidense que es la división de animación de Warner Bros. Entertainment. Establecido el 7 de enero de 2013, el estudio es el sucesor del estudio de animación tradicional 2D disuelto Warner Bros. Feature Animation, que cerró en 2003 y la división de cine familiar disuelta Warner Bros. Family Entertainment, que cerró en 2009. La entidad también es un estudio de animación hermano del estudio de animación regular Warner Bros. Animation
+  Walt Disney Animation Studios:
+    template: { name: Studio }
+    imdb_list: https://www.imdb.com/list/ls059383351/
+    summary: Walt Disney Animation Studios (WDAS), a veces acortado a Disney Animation, es un estudio de animación estadounidense que crea características animadas y cortometrajes para The Walt Disney Company. Fundado el 16 de octubre de 1923 por los hermanos Walt Disney y Roy O. Disney, es uno de los estudios de animación más antiguos del mundo. Actualmente está organizado como una división de Walt Disney Studios y tiene su sede en el Roy E. Disney Animation Building en el lote de Walt Disney Studios en Burbank, California.
+  Walt Disney Pictures:
+    template: { name: Studio }
+    imdb_list: https://www.imdb.com/list/ls077114097/
+    summary: Walt Disney Pictures es un estudio de producción cinematográfica estadounidense de The Walt Disney Studios, que es propiedad de The Walt Disney Company. El estudio es el productor insignia de películas de acción en vivo dentro de la unidad de Walt Disney Studios, y tiene su sede en los Walt Disney Studios en Burbank, California. Las películas de animación producidas por Walt Disney Animation Studios y Pixar Animation Studios también se estrenan bajo esta marca. Walt Disney Studios Motion Pictures distribuye y comercializa las películas producidas por Walt Disney Pictures.

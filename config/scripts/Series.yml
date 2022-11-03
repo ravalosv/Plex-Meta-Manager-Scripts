@@ -1,0 +1,238 @@
+                                      ######################################################
+                                      #                TV Collections Studios              #
+                                      ######################################################
+###########################
+#        Templates        #
+###########################
+templates:
+    Studio:
+        url_poster: <<poster>>
+        sort_title: ++<<order>>_<<collection_name>>
+        #collection_order: alpha
+        
+collections:
+###########################
+#    Studio Collections   #
+###########################
+
+  Netflix:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/220354, order: .1}
+    summary: Series transmitidas por Netflix
+    smart_filter:
+      any:
+        Network: 
+          - Netflix
+
+  Amazon:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/78265, order: .2}
+    summary: Series transmitidas por Amazon
+    smart_filter:
+      any:
+        Network: 
+          - Amazon
+
+  Disney+:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/114750, order: .3}
+    summary: Series transmitidas por Amazon
+    smart_filter:
+      any:
+        Network: 
+          - Disney+
+          - Disney Junior Latin America
+          - Disney Junior
+          - Disney Channel
+          - Disney+
+
+  Apple TV+:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/204738, order: .5}
+    summary: Series transmitidas por Amazon
+    smart_filter:
+      any:
+        Network: 
+          - Apple TV+
+
+    
+
+  ABC:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/113115, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - ABC
+
+  AMC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113118, order: 10}
+        summary: Shows Aired on AMC  
+        smart_filter:
+          any:
+            Network: 
+              - AMC
+              - AMC+
+
+  BBC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113123, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - BBC One
+              - BBC Two
+              - BBC Three
+        summary: Shows Aired on BBC One
+
+  CBS:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113138, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - CBS
+        summary: Shows Aired on CBS
+
+  DC Universe:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113155, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - DC Universe
+        summary: Shows Aired on DC Universe
+
+  Discovery:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/137385, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - discovery+
+          - Discovery
+          - Discovery en Español
+          - Discovery Real Time
+
+
+
+  
+  FOX:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113173, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - FOX
+        summary: Shows Aired on FOX   
+
+  FX:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/206869, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - FX
+        summary: Shows Aired on FX          
+
+
+  HBO:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113186, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - HBO
+              - HBO Asia
+              - HBO Europe
+              - HBO Max
+              - HBO Nordic
+        summary: HBO Orginal Shows   
+
+
+  History:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/203788, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - History
+
+
+  Hulu:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/171378, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - Hulu
+
+  National Geographic:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/204241, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - Nat Geo Wild
+          - National Geographic Channel
+          - National Geographic
+
+
+  NBC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113217, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - NBC
+        summary: Shows Aired on NBC    
+
+  Nickelodeon:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/224781, order: 10 }
+    smart_filter:
+      any:
+        Network: 
+          - Nickelodeon
+
+  Paramount+:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/204457, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - Paramount+
+              - Paramount Network
+        summary: Paramount+ Original Shows
+
+  Peacock:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/205411, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - Peacock
+        summary: Peacock Original Shows
+
+  Showtime:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113257, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - Showtime
+        summary: Showtime Orginal Shows
+
+  Star+:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/193596, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - STAR+
+        summary: Star+ Orginal Shows       
+
+
+  Starz:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113265, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - Starz
+        summary: Starz Orginal Shows     
+
+  SyFy:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113267, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - SyFy
+        summary: Shows Aired on SYFY
+
+  Youtube Originals:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/235770, order: 10}
+        smart_filter:
+          any:
+            Network: 
+              - YouTube Premium
+              - YouTube
+        summary: Youtube Originals        

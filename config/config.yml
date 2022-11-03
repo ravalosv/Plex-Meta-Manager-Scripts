@@ -1,0 +1,177 @@
+## 
+##   01.- years
+##   02.- genres
+##   03.- seasonal
+##   04.- studio
+##   05.- oscars
+##
+ 
+
+libraries:                                      # This is called out once within the config.yml file                                       
+#  Películas 4k:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/years
+#    - file: config/scripts/genres
+#    - file: config/scripts/seasonal
+#    - file: config/scripts/studio                  
+#    - file: config/scripts/oscars
+#    overlay_path:
+#    - remove_overlays: false                    
+#    - file: config/repository/overlays/Overlays.yml                 
+#    - file: config/repository/overlays/imdb_top_250            
+#  Películas:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/years
+#    - file: config/scripts/seasonal
+#    - file: config/scripts/studio                  
+#    - file: config/scripts/oscars                  
+#    overlay_path:
+#    - remove_overlays: false                    
+#    - file: config/repository/overlays/Overlays.yml                 
+#    - file: config/repository/overlays/imdb_top_250            
+
+  Series:                                       # Each library must match the Plex library name
+    metadata_path:
+    - file: config/scripts/Series
+                 
+    overlay_path:
+    - remove_overlays: false                    
+    - file: config/repository/overlays/Overlays.yml                 
+    - file: config/repository/overlays/imdb_top_250            
+  
+#  Series Netflix:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/SeriesNetflix
+#                 
+#    overlay_path:
+#    - remove_overlays: false                    
+#    - file: config/repository/overlays/Overlays.yml                 
+#    - file: config/repository/overlays/imdb_top_250            
+
+
+#playlist_files:
+#- file: config/playlists.yml
+#- file: config/repository/playlist                             
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+webhooks:                                       # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+#  url: http://75.119.139.80:32400               # Hollinhome
+#  token: RGjSmHoM62dysZMSzZw9
+  url: http://144.126.140.94:32400               # Hollinhome 2
+  token: 2P7yt66HyfPzs_Qgu8C7
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:                                           # REQUIRED for the script to run
+  apikey: 863ca3724e5d432f9ed6ead982b91bda
+  language: es
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: http://75.119.139.80:8181
+  apikey: 2e5ace8bc8b047dea58acabc4574ac38
+omdb:
+  apikey: da8d0c77
+  cache_expiration: 60
+mdblist:
+  apikey: 66q3vu3v01tizap3jcvp4mtuc
+  cache_expiration: 60
+notifiarr:
+  apikey: ####################################
+anidb:                                          # Not required for AniDB builders unless you want mature content
+  username: ######
+  password: ######
+  language: en
+radarr:                                         # Can be individually specified per library as well
+  url: http://192.168.1.12:7878
+  token: ################################
+  add_missing: false
+  add_existing: false
+  root_folder_path: S:/Movies
+  monitor: true
+  availability: announced
+  quality_profile: HD-1080p
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+  upgrade_existing: false
+sonarr:                                         # Can be individually specified per library as well
+  url: http://192.168.1.12:8989
+  token: ################################
+  add_missing: false
+  add_existing: false
+  root_folder_path: S:/TV Shows
+  monitor: all
+  quality_profile: HD-1080p
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false
+trakt:
+  client_id: 82d630136407e10abcfb74d064bfed0198bc7fabdbec16d41560d7cef8ec685b
+  client_secret: 0104afb0ffaf924296360a735de3dd52e0e35fe6676bbafa71fd7fe747e3cc88
+  pin:
+  authorization:
+    # everything below is autofilled by the script
+    access_token: 81e487656eb0fff389ffa835eebc0ec44d67a45ba4f16ed9ce8008de36d258de
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: befb1b718b835bb0d1818ae5c09a2a86321957d30463b18c6f6c3811b70eca6b
+    scope: public
+    created_at: 1660627198
+mal:
+  client_id: ################################
+  client_secret: ################################################################
+  authorization:
+    # everything below is autofilled by the script
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:

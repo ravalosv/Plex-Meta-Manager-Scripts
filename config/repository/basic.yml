@@ -1,0 +1,87 @@
+#############################################################
+#               Basic Plex Chart Collections                #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults 
+#
+#   Based on: PMM/chart/basic                    
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/basic                               #
+#        template_variables:                                #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   released         Newly Released              #
+#          #   episodes         New Episodes                #
+#                                                           #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
+#                                                           #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in it's section    #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
+#############################################################
+
+external_templates:
+  file: config/Repository/Templates/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+  released:
+    default:
+      in_the_last_released: 90
+    summary: Colección de los últimos estrenos
+    smart_filter:
+      all:
+        release: <<in_the_last_released>>
+      sort_by: release.desc
+  episodes:
+    default:
+      in_the_last_episodes: 7
+    summary: A collection of newly-released episodes
+    smart_filter:
+      type: episodes
+      all:
+        episode_air_date: <<in_the_last_episodes>>
+      sort_by: release.desc
+
+collections:
+  Chart Collections:
+    template:
+      - name: separator off
+        separator: chart
+
+  Estrenos:
+    template:
+      - name: released
+      - name: chart_shared
+        key: released
+
+  Nuevos Episodios:
+    template:
+      - name: episodes
+      - name: chart_shared
+        key: episodes
+        check_library: show

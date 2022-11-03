@@ -1,0 +1,137 @@
+######################################################
+#                Genre Collections                   #
+######################################################
+templates:
+  IMDb Genre:
+    default:
+      title: feature
+      limit: 100
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
+        limit: <<limit>>
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
+        limit: <<limit>>
+    sort_title: +3_<<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  Other Genre:
+    sort_title: +3_<<collection_name>>
+    sync_mode: sync
+    smart_label: random
+collections:
+  Acción:
+    template: { name: IMDb Genre, genre: action }
+    summary: El cine de acción es un género en el que la acción física tiene prioridad en la narración. La película a menudo tendrá movimiento continuo y acción incluyendo acrobacias físicas, persecuciones, peleas, batallas y carreras. La historia generalmente gira en torno a un héroe que tiene un objetivo, pero se enfrenta a probabilidades increíbles para obtenerlo.
+  Aventura:
+    template: { name: IMDb Genre, genre: adventure }
+    summary: El cine de aventura es un género que gira en torno a las conquistas y exploraciones de un protagonista. El propósito de la conquista puede ser recuperar una persona o un tesoro, pero a menudo el enfoque principal es simplemente la búsqueda de lo desconocido. Estas películas generalmente tienen lugar en lugares exóticos y juegan con mitos históricos. Las películas de aventura incorporan rompecabezas de suspense y obstáculos intrincados que el protagonista debe superar para lograr el objetivo final.
+  Animación:
+    template: { name: IMDb Genre, genre: animation }
+    summary: La película animada es una colección de ilustraciones que se fotografían cuadro por cuadro y luego se reproducen en una rápida sucesión. Desde sus inicios, la animación ha tenido una tendencia creativa e imaginativa. Siendo capaz de traer animales y objetos a la vida, este género ha atendido a los cuentos de hadas y cuentos infantiles. Sin embargo, la animación ha sido durante mucho tiempo un género disfrutado por todas las edades. A partir de los últimos años, ha habido incluso una afluencia de animación dirigida a los adultos. La animación es comúnmente considerada como una técnica, por lo que es la capacidad de abarcar muchos géneros diferentes.
+  Comedia:
+    template: { name: IMDb Genre, genre: comedy }
+    summary: La comedia es un género de cine que utiliza el humor como una fuerza impulsora. El objetivo de una película de comedia es la risa ilícita de la audiencia a través de historias y personajes entretenidos. Aunque la película de comedia puede tomar algún material serio, la mayoría tiene un final feliz. La comedia tiene la tendencia a convertirse en un sub-género híbrido porque el humor se puede incorporar a muchos otros géneros. Las comedias son más propensas que otras películas a recurrir al éxito y la popularidad de una estrella individual.
+  Crimen:
+    template: { name: IMDb Genre, genre: crime }
+    summary: El cine criminal es un género que gira en torno a la acción de una mente criminal. Una película de Crimen a menudo gira en torno al propio criminal, narrando su ascenso y caída. Algunas películas de Crimen tendrán una historia que sigue a la víctima del criminal, pero otras siguen a la persona en busca del criminal. Este género tiende a ser rápido ritmo con un aire de misterio - este misterio puede venir de la trama o de los propios personajes.
+  Documentales:
+    template: { name: IMDb Genre, genre: documentary, title: documentary }
+    summary: El cine documental es un género de no ficción destinado a documentar la realidad principalmente con fines de instrucción, educación o mantenimiento de un registro histórico.
+  Drama:
+    template: { name: IMDb Genre, genre: drama }
+    summary: El cine de Drama es un género que se basa en el desarrollo emocional y relacional de personajes realistas. Mientras que la película dramática depende en gran medida de este tipo de desarrollo, los temas dramáticos juegan un papel importante en la trama también. A menudo, estos temas dramáticos se toman de temas intensos de la vida real. Si héroes o heroínas se enfrentan a un conflicto desde el exterior o un conflicto dentro de sí mismos, la película de drama tiene como objetivo contar una historia honesta de las luchas humanas.
+  Familiar:
+    template: { name: IMDb Genre, genre: family }
+    summary: El cine familiar es un género que contiene contenido apropiado para los espectadores más jóvenes. El cine familiar tiene como objetivo atraer no solo a los niños, sino a una amplia gama de edades. Si bien la historia puede atraer a un público más joven, hay componentes de la película que están orientados hacia los adultos, como chistes ingeniosos y humor. Este género puede caer en muchos otros géneros, incluyendo comedia, aventura, fantasía y películas animadas.
+  Fantasía:
+    template: { name: IMDb Genre, genre: fantasy }
+    summary: El cine de fantasía es un género que incorpora temas imaginativos y fantásticos. Estos temas generalmente involucran magia, eventos sobrenaturales o mundos de fantasía. Aunque es su propio género, estas películas pueden coincidir con los géneros de terror y ciencia ficción. A diferencia de la ciencia ficción, una película de fantasía no necesita estar arraigada en los hechos. Este elemento permite al público ser transportado a un mundo nuevo y único. A menudo, estas películas se centran en un héroe ordinario en una situación extraordinaria.
+  Gangster:
+    template: { name: Other Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls026270180/
+      - https://www.imdb.com/list/ls000093502/
+    summary: La película de gángsters es un sub-género de películas de crimen que se centra en el crimen organizado o la mafia. A menudo la trama gira en torno al ascenso y caída de un líder del crimen organizado. Muchas películas de Gangster exploran la naturaleza destructiva del crimen organizado, mientras que otras intentan mostrar la humanidad de los personajes individuales.
+  Halloween.:
+    template: { name: Other Genre }
+    trakt_list:
+      - https://trakt.tv/users/kairbear08/lists/halloween
+      - https://trakt.tv/users/mybicycle/lists/halloween
+      - https://trakt.tv/users/jayinftl/lists/halloween
+      - https://trakt.tv/users/roswellgeek/lists/halloween
+    name_mapping: Halloween (Season)
+    summary: La película de Halloween es un género que gira en torno a la trama de Halloween.
+  Históricas:
+    template: { name: IMDb Genre, genre: history }
+    summary: El cine de historia es un género que toma los acontecimientos históricos y las personas y los interpreta a mayor escala. La precisión histórica no es el foco principal, sino más bien la narración de una historia grandiosa. El drama de una película de Historia a menudo se acentúa por una partitura musical arrolladora, trajes lujosos y un alto valor de producción.
+  Terror:
+    template: { name: IMDb Genre, genre: horror }
+    summary: El cine de terror es un género que tiene como objetivo crear una sensación de miedo, pánico, alarma y pavor para el público. Estas películas son a menudo inquietantes y se basan en asustar a la audiencia a través de una representación de sus peores miedos y pesadillas. Las películas de terror generalmente se centran en la llegada de una fuerza, persona o evento maligno. Muchas películas de terror incluyen criaturas míticas como fantasmas, vampiros y zombis. Tradicionalmente, las películas de terror incorporan una gran cantidad de violencia y sangre en la trama. Aunque tiene su propio estilo, la película de terror a menudo se superpone a los géneros de fantasía, thriller y ciencia ficción.
+  Artes Marciales:
+    template: { name: Other Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls000099643/
+      - https://www.imdb.com/list/ls068611186/
+      - https://www.imdb.com/list/ls068378513/
+      - https://www.imdb.com/list/ls090404120/
+    summary: La película de artes marciales es un sub-género de películas de acción que cuentan con numerosas artes marciales de combate entre los personajes. Estos combates suelen ser el principal atractivo y valor de entretenimiento de las películas, y a menudo son un método de narración y expresión y desarrollo de personajes. Las artes marciales se presentan con frecuencia en escenas de entrenamiento y otras secuencias, además de peleas. Las películas de artes marciales comúnmente incluyen otros tipos de acción, como combate cuerpo a cuerpo, acrobacias, persecuciones y tiroteos.
+  Musica:
+    template: { name: IMDb Genre, genre: music, limit: 200 }
+    summary: El cine musical es un género que gira en torno a la música siendo una parte integral de las vidas de los personajes.
+  Musical:
+    template: { name: IMDb Genre, genre: musical, limit: 200 }
+    summary: Un musical entrelaza las actuaciones vocales y de danza en la narrativa de la película. Las canciones de una película pueden usarse para promover la historia o simplemente mejorar la experiencia del público. Estas películas se hacen a menudo a gran escala e incorporan trajes y decorados lujosos. Los musicales tradicionales se centran en una estrella conocida, famosa por sus habilidades de baile o canto (p.ej. Fred Astaire, Gene Kelly, Judy Garland). Estas películas exploran conceptos tales como el amor y el éxito, lo que permite al público escapar de la realidad.
+  Misterio:
+    template: { name: IMDb Genre, genre: mystery }
+    summary: Una película de misterio se centra en una persona de autoridad, generalmente un detective, que está tratando de resolver un crimen misterioso. El protagonista principal utiliza pistas, investigación y razonamiento lógico. El elemento más importante en estas películas es un sentido de suspenso "whodunit", generalmente creado a través de señales visuales y giros de trama inusuales.
+  Pandemia:
+    template: { name: Other Genre }
+    imdb_list:
+      - url: https://www.imdb.com/search/keyword/?keywords=deadly-virus%2Chealth-crisis%2Cpandemic%2Cpublic-health-epidemic%2Cvirus%2Ccoronavirus&sort=moviemeter,asc&mode=detail&page=1&ref_=kw_ref_key
+        limit: 1000
+      - url: https://www.imdb.com/list/ls041901506/
+      - url: https://www.imdb.com/list/ls092321048/
+    summary: Una película de Pandemic se resuelve alrededor de virus, plagas y enfermedades generalizadas.
+  Romance:
+    template: { name: IMDb Genre, genre: romance, limit: 200 }
+    summary: "El cine romántico puede definirse como un género en el que la trama gira en torno al amor entre dos protagonistas. Este género generalmente tiene un tema que explora un tema dentro del amor, incluyendo pero no limitado a: amor a primera vista, amor prohibido, triángulos de amor y amor sacrificial. El tono de la película Romance puede variar mucho. Ya sea que el final sea feliz o trágico, la película Romance tiene como objetivo evocar emociones fuertes en el público."
+  Comedia Romántica:
+    template: { name: IMDb Genre, genre: "romance,comedy", limit: 200 }
+    summary: Comedia romántica es un género que intenta captar el corazón del espectador con la combinación de amor y humor. Este sub-género es alegre y por lo general coloca a los dos protagonistas en situación humorística. La película de comedia romántica gira en torno a un ideal romántico, como el amor verdadero. Al final, el ideal triunfa sobre la situación o el obstáculo, creando así un final feliz.
+    filters:
+      genre: Comedy
+  Drama Romántico:
+    template: { name: IMDb Genre, genre: "romance,drama", limit: 200 }
+    summary: La película de drama romántico es un género que explora el lado complejo del amor. La trama generalmente se centra en un obstáculo que impide el amor entre dos personas. Los obstáculos en la película de drama romántico pueden ir desde la desaprobación de una familia, al amor prohibido, a las propias restricciones psicológicas. Muchos dramas románticos terminan con los amantes que se separan debido a la enormidad del obstáculo, la comprensión de la incompatibilidad, o simplemente debido al destino.
+    filters:
+      genre: Drama
+  Ciencia Ficción:
+    template: { name: IMDb Genre, genre: sci-fi }
+    summary: La película de ciencia ficción (Sci-Fi) es un género que incorpora temas hipotéticos y basados en la ciencia en la trama de la película. A menudo, este género incorpora elementos y tecnologías futuristas para explorar cuestiones sociales, políticas y filosóficas. La película en sí se desarrolla generalmente en el futuro, ya sea en la tierra o en el espacio. Tradicionalmente, una película de ciencia ficción incorporará héroes, villanos, lugares inexplorados, misiones fantásticas y tecnología avanzada.
+  Deportes:
+    template: { name: IMDb Genre, genre: sport, limit: 200 }
+    summary: Una película deportiva gira en torno a un entorno deportivo, un evento o un atleta. A menudo, estas películas se centrarán en un único evento deportivo que tiene una importancia significativa. Las películas deportivas tradicionalmente tienen una trama simple que se acumula hasta el evento deportivo significativo. Este género es conocido por incorporar técnicas cinematográficas para construir anticipación e intensidad. Las películas deportivas tienen una amplia gama de sub-géneros, desde comedias hasta dramas, y son más propensas que otros géneros a estar basadas en eventos de la vida real.
+  Stand Up Comedy:
+    template: { name: Other Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls070221411/
+      - https://www.imdb.com/list/ls086584751/
+      - https://www.imdb.com/list/ls086022668/
+      - https://www.imdb.com/list/ls049792208/
+    summary: Stand-up comedy es un estilo cómico en el que un comediante actúa frente a una audiencia en vivo, hablando directamente con ellos a través de un micrófono. Los comediantes dan la ilusión de que están dialogando, pero en realidad, están monólogos de una agrupación de historias humorísticas, chistes y frases, típicamente llamadas un truco, rutina, acto o conjunto. Algunos comediantes stand-up utilizan accesorios, música o trucos de magia para mejorar sus actos. Los comediantes de stand-up realizan extensiones cuasi autobiográficas y ficticias de sus seres fuera del escenario.
+  Espadas y hechicería:
+    template: { name: Other Genre }
+    imdb_list: https://www.imdb.com/list/ls022909805
+    summary: La película Sword and Sorcery es un sub-género de Fantasy que tiende a ser más basada en la trama. Estas películas se basan en escenas de acción y batalla pesadas. Los temas comunes en las películas de Sword and Sorcery incluyen una misión de rescate, salvar a una princesa y luchar contra un monstruo fantástico. Los mundos y personajes de estas películas a menudo están mucho menos desarrollados que en otros subgéneros de fantasía. De todos los sub-géneros de Fantasy, Sword and Sorcery es más probable que esté dirigida a un público más joven, ya que muchas de estas películas son animadas.
+  Thriller:
+    template: { name: IMDb Genre, genre: thriller }
+    summary: Thriller Film es un género que gira en torno a la anticipación y el suspense. El objetivo de Thrillers es mantener al público alerta y al borde de sus asientos. El protagonista de estas películas se enfrenta a un problema - un escape, una misión, o un misterio. No importa en qué subgénero caiga una película de suspenso, hará hincapié en el peligro que enfrenta el protagonista. La tensión con el problema principal se construye a lo largo de la película y conduce a un clímax altamente estresante.
+  Guerra:
+    template: { name: IMDb Genre, genre: war, limit: 200 }
+    summary: War Film es un género que analiza la realidad de la guerra a gran escala. A menudo se centran en batallas históricas, así como en cuestiones políticas dentro de la guerra. Este género por lo general se centra en un personaje principal y su equipo de apoyo, dando a la audiencia una mirada al interior de la cruda realidad de la guerra.
+  Western:
+    template: { name: IMDb Genre, genre: western, limit: 200 }
+    summary: "Western Film es un género que gira en torno a historias ambientadas principalmente a finales del siglo XIX en el Viejo Oeste estadounidense. La mayoría de los westerns se sitúan entre la Guerra Civil Americana (1865) y los primeros años 1900. Los temas comunes en Western Film incluyen: la conquista del salvaje oeste, la separación cultural de Oriente y Occidente, la resistencia de Occidente al cambio moderno, el conflicto entre vaqueros e indios, forajidos y la caza de tesoros/ oro. American Western Film generalmente gira en torno a un héroe estoico y enfatiza la importancia del honor y el sacrificio."
+  Infantiles:
+    template: { name: IMDb Genre, genre: Children }
+    summary: "Children’s Film es un género de cine destinado a entretener al público joven. El género Children es generalmente clasificado como G, y tiene un contenido simplista que es apropiado para la edad. Al igual que con el género de la familia, las películas para niños cubren una amplia gama de temas y pueden caer en múltiples géneros - como la aventura y musicales. Muy a menudo, este género incorpora elementos de fantasía y juega con la posibilidad que tiene la imaginación. Muchas películas de este género son animadas y tienen un propósito educativo. La mayoría de las películas de Children’s demostrarán algún tipo de mensaje moral, un cuento con moraleja o contendrán una trama que ilustra el bien superando el mal."
