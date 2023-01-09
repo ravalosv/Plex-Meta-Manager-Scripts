@@ -1,6 +1,6 @@
 Instrucciones para ejecutar el script
 
-1.- ingresar a cmd en la ruta C:\Plex-Meta-Manager
+1.- ingresar a cmd en la ruta C:\Mis Datos\Mis Proyectos\git\Plex-Meta-Manager-Scripts
 
 2.- activar ambiente virtual
 

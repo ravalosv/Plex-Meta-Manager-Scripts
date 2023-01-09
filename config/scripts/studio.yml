@@ -32,6 +32,9 @@ templates:
       sort_by: <<sort_by>>
       any:
         studio.is: <<value>>
+  Studio:
+      url_poster: <<poster>>
+      sort_title: ++<<order>>_<<collection_name>>
 
 collections:
   Studio Collections:
@@ -113,3 +116,9 @@ dynamic_collections:
       Warner Bros. Pictures:
         - Warner
         - Warner Animation Group
+
+  Netflix:
+    template: { name: Studio, orden: '01', poster: https://theposterdb.com/api/assets/220354 }
+    summary: La película de gángsters es un sub-género de películas de crimen que se centra en el crimen organizado o la mafia. A menudo la trama gira en torno al ascenso y caída de un líder del crimen organizado. Muchas películas de Gangster exploran la naturaleza destructiva del crimen organizado, mientras que otras intentan mostrar la humanidad de los personajes individuales.
+    trakt_list: 
+      - https://trakt.tv/users/disgustedguy/lists/netflix

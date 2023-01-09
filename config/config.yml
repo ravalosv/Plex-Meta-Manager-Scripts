@@ -5,7 +5,6 @@
 ##   04.- studio
 ##   05.- oscars
 ##
- 
 
 libraries:                                      # This is called out once within the config.yml file                                       
 #  Películas 4k:                                       # Each library must match the Plex library name
@@ -19,26 +18,55 @@ libraries:                                      # This is called out once within
 #    - remove_overlays: false                    
 #    - file: config/repository/overlays/Overlays.yml                 
 #    - file: config/repository/overlays/imdb_top_250            
-#  Películas:                                       # Each library must match the Plex library name
-#    metadata_path:
+  Películas:                                       # Each library must match the Plex library name
+    metadata_path:
 #    - file: config/scripts/years
 #    - file: config/scripts/seasonal
-#    - file: config/scripts/studio                  
+    - file: config/scripts/studio
 #    - file: config/scripts/oscars                  
-#    overlay_path:
-#    - remove_overlays: false                    
-#    - file: config/repository/overlays/Overlays.yml                 
-#    - file: config/repository/overlays/imdb_top_250            
-
-  Series:                                       # Each library must match the Plex library name
-    metadata_path:
-    - file: config/scripts/Series
-                 
     overlay_path:
-    - remove_overlays: false                    
-    - file: config/repository/overlays/Overlays.yml                 
-    - file: config/repository/overlays/imdb_top_250            
-  
+    - remove_overlays: false
+    - file: config/repository/overlays/Overlays.yml
+    - file: config/repository/overlays/imdb_top_250
+
+#  Series:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/Series
+#
+#    overlay_path:
+#    - remove_overlays: false
+#    - file: config/repository/overlays/Overlays.yml
+#    - file: config/repository/overlays/imdb_top_250
+#
+
+#  Netflix, HBO, Disney, Amazon:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/Series
+#
+#    overlay_path:
+#    - remove_overlays: false
+#    - file: config/repository/overlays/Overlays.yml
+#    - file: config/repository/overlays/imdb_top_250
+
+#  Series Infantiles:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/Series
+#
+#    overlay_path:
+#    - remove_overlays: false
+#    - file: config/repository/overlays/Overlays.yml
+#    - file: config/repository/overlays/imdb_top_250
+
+#  Anime:                                       # Each library must match the Plex library name
+#    metadata_path:
+#    - file: config/scripts/Anime
+#
+#    overlay_path:
+#    - remove_overlays: false
+#    - file: config/repository/overlays/Overlays.yml
+#    - file: config/repository/overlays/imdb_top_250
+
+
 #  Series Netflix:                                       # Each library must match the Plex library name
 #    metadata_path:
 #    - file: config/scripts/SeriesNetflix
@@ -160,12 +188,12 @@ trakt:
   pin:
   authorization:
     # everything below is autofilled by the script
-    access_token: 81e487656eb0fff389ffa835eebc0ec44d67a45ba4f16ed9ce8008de36d258de
+    access_token: d5d54db2992f0d725623cfb924ce2313fbaa909a121f11d8db20e8cf2148cec2
     token_type: Bearer
     expires_in: 7889237
-    refresh_token: befb1b718b835bb0d1818ae5c09a2a86321957d30463b18c6f6c3811b70eca6b
+    refresh_token: 7e36d0fe0347af701d35fd635d29aefd56d261b444c868e6103d28db716ca242
     scope: public
-    created_at: 1660627198
+    created_at: 1673279163
 mal:
   client_id: ################################
   client_secret: ################################################################

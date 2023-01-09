@@ -1,0 +1,26 @@
+                                      ######################################################
+                                      #                TV Collections Studios              #
+                                      ######################################################
+###########################
+#        Templates        #
+###########################
+templates:
+  GenreMulti:
+    template: { name: GenreMulti }
+    sort_title: +02_<<orden>>_<<collection_name>>
+    sync_mode: sync
+        
+collections:
+###########################
+#    Studio Collections   #
+###########################
+
+  Crunchyroll:
+    template: { name: GenreMulti, orden: '01' }
+    summary: Crunchyroll es un servicio de streaming over-the-top de video bajo demanda estadounidense propiedad de Sony a través de una empresa conjunta entre Sony Pictures y Aniplex de Sony Music Entertainment Japan. La empresa se centra en la distribución, producción y concesión de licencias de anime y dorama japoneses.
+    trakt_list: 
+      - https://trakt.tv/users/fs-corrupt/lists/crunchyroll-shows
+      - https://trakt.tv/users/saab51/lists/crunchyroll-3376c416-919f-479a-a2f5-724786e48b69
+      - https://trakt.tv/users/plexmetamanager/lists/crunchyroll-shows
+      - https://trakt.tv/users/winecountryflix/lists/crunchyroll-tv-shows
+    url_poster: https://theposterdb.com/api/assets/233729

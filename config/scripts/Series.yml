@@ -19,6 +19,7 @@ collections:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/220354, order: .1}
     summary: Series transmitidas por Netflix
     smart_filter:
+      validate: false
       any:
         Network: 
           - Netflix
@@ -27,6 +28,7 @@ collections:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/78265, order: .2}
     summary: Series transmitidas por Amazon
     smart_filter:
+      validate: false
       any:
         Network: 
           - Amazon
@@ -35,18 +37,28 @@ collections:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/114750, order: .3}
     summary: Series transmitidas por Amazon
     smart_filter:
+      validate: false
       any:
         Network: 
           - Disney+
           - Disney Junior Latin America
           - Disney Junior
           - Disney Channel
-          - Disney+
+
+  Disney XD:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/212645, order: .3}
+    summary: Series transmitidas por Amazon
+    smart_filter:
+      validate: false
+      any:
+        Network: 
+          - Disney XD
 
   Apple TV+:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/204738, order: .5}
     summary: Series transmitidas por Amazon
     smart_filter:
+      validate: false
       any:
         Network: 
           - Apple TV+
@@ -56,6 +68,7 @@ collections:
   ABC:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/113115, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - ABC
@@ -64,6 +77,7 @@ collections:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113118, order: 10}
         summary: Shows Aired on AMC  
         smart_filter:
+          validate: false
           any:
             Network: 
               - AMC
@@ -72,6 +86,7 @@ collections:
   BBC:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113123, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - BBC One
@@ -82,14 +97,26 @@ collections:
   CBS:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113138, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - CBS
         summary: Shows Aired on CBS
 
+  Cartoon Network:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/91266, order: 10}
+        smart_filter:
+          validate: false
+          any:
+            Network: 
+              - Cartoon Network
+        summary: Shows Aired on Cartoon Network
+
+
   DC Universe:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113155, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - DC Universe
@@ -98,6 +125,7 @@ collections:
   Discovery:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/137385, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - discovery+
@@ -111,6 +139,7 @@ collections:
   FOX:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113173, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - FOX
@@ -119,6 +148,7 @@ collections:
   FX:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/206869, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - FX
@@ -128,6 +158,7 @@ collections:
   HBO:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113186, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - HBO
@@ -136,11 +167,13 @@ collections:
               - HBO Max
               - HBO Nordic
         summary: HBO Orginal Shows   
+        
 
 
   History:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/203788, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - History
@@ -149,6 +182,7 @@ collections:
   Hulu:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/171378, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - Hulu
@@ -156,6 +190,7 @@ collections:
   National Geographic:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/204241, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - Nat Geo Wild
@@ -166,6 +201,7 @@ collections:
   NBC:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113217, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - NBC
@@ -174,13 +210,23 @@ collections:
   Nickelodeon:
     template: {name: Studio, poster: https://theposterdb.com/api/assets/224781, order: 10 }
     smart_filter:
+      validate: false
       any:
         Network: 
           - Nickelodeon
 
+  Nick Jr.:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/157888, order: 10 }
+    smart_filter:
+      validate: false
+      any:
+        Network: 
+          - Nick Jr.
+
   Paramount+:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/204457, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - Paramount+
@@ -190,6 +236,7 @@ collections:
   Peacock:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/205411, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - Peacock
@@ -198,6 +245,7 @@ collections:
   Showtime:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113257, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - Showtime
@@ -206,6 +254,7 @@ collections:
   Star+:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/193596, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - STAR+
@@ -215,6 +264,7 @@ collections:
   Starz:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113265, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - Starz
@@ -223,6 +273,7 @@ collections:
   SyFy:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113267, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - SyFy
@@ -231,6 +282,7 @@ collections:
   Youtube Originals:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/235770, order: 10}
         smart_filter:
+          validate: false
           any:
             Network: 
               - YouTube Premium
